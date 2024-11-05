@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: Manrope;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* bagian cinta */
+/*style  untuk navbar atau bagian header */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  margin: auto;
+}
+
+/* style  untuk container utama */
+.nav-wrapper {
+  max-width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* style  untuk logo dan teks di navbar */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* style  untuk gambar logo */
+.logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* style  teks untuk logo */
+.logo span {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+
+/* style  untuk daftar menu navbar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* style  untuk tautan dalam navbar */
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Gstyle  untuk tombol Log In dan Sign Up */
+.auth-buttons {
+  display: flex;
+}
+
+/* style  untuk setiap tombol */
+.auth-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* style khusus untuk tombol Log In */
+.login-btn {
+  background: #fff;
+  color: #fff;
+}
+.login-btn:hover {
+  color: #9b89f9;
+}
+
+.login-btn a {
+  color: #9b89f9;
+}
+
+/* style khusus untuk tombol Sign Up */
+.signup-btn {
+  background-color: #9b89f9;
+  color: white;
+}
+
+/* style untuk bagian konten utama */
+.main-content {
+  display: flex;
+  align-items: center;
+  padding: 120px 30px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  justify-content: space-around;
+}
+
+/* style untuk bagian teks pada konten utama */
+.main-content .text {
+  max-width: 500px;
+  margin-right: 50px;
+}
+
+/* style judul utama */
+.main-content h1 {
+  font-size: 45px;
+  color: #333;
+  margin: 0;
+}
+
+/* style paragraf pada konten utama */
+.main-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 20px 0;
+  font-size: 17px;
+}
+
+/* stle untuk tombol daftar */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #9b89f9;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #3e2b84;
+  color: #fff;
+}
+
+/* style untuk gambar pada konten utama */
+.main-content .image {
+  max-width: 400px;
+}
+
+/* style untuk gambar pada konten utama */
+.main-content .image img {
+  width: 100%;
+  height: auto;
+}
+
+/* style untuk bagian Tentang Kami */
+.about-section {
+  background-color: #e7e4ff;
+}
+
+.about-wrapper {
+  width: 90%;
+  height: 400px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 200px;
+}
+
+/* style untuk gambar di bagian Tentang Kami */
+.about-wrapper img {
+  width: 350px;
+  height: 300px;
+}
+
+/* style judul pada bagian Tentang Kami */
+.about-wrapper h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 16px;
+
+  padding-left: 150px;
+}
+
+/* style paragraf pada bagian Tentang Kami */
+.about-wrapper p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 17px;
+  text-align: justify;
+
+  width: 500px;
+}
+
+/* bagian yanti */
+
+.container {
+  max-width: 90%;
+  height: fit-content;
+  margin: auto;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 16px;
+}
+
+.card-grid {
+  /* background-color: #4d8fd6; */
+  max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  height: 620px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-left: 36%;
+  margin-left: 80px;
+  background-color: #8c82fc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3e2b84;
+}
+
+.card-info {
+  /* background-color: #8c82fc; */
+  text-align: left;
+}
+
+.date-time {
+  /* background-color: antiquewhite; */
+  text-align: left;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.date p {
+  padding-top: 6px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding-left: 3px;
+}
+
+.time p {
+  padding-top: 6px;
+  padding-left: 8px;
+  font-weight: 700;
+}
+
+.zoom {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding-left: 5px;
+}
+
+.zoom p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.contact-container h3 {
+  text-align: center;
+  padding: 30px;
+}
+/* kontak */
+.social-media {
+  width: 300px;
+  height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+  font-weight: 700;
+}
+
+/* untuk button */
+.add-webinar {
+  margin-top: 50px;
+  padding-left: 72%;
+  margin-bottom: 50px;
+}
+
+/* CSS untuk footer */
+.footer {
+  background-color: #8c82fc;
+  color: white;
+  text-align: center;
+  padding: 40px;
+
+  margin-top: 30px;
+  bottom: 0;
+  width: 100%;
+  font-weight: 700;
+}
