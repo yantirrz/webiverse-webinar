@@ -42,7 +42,7 @@ session_start();
                 </ul>
                 <!-- Tombol untuk Log In dan Sign Up -->
                 <div class="auth-buttons">
-                    <button class="signup-btn">Logout</button>
+                    <button class="signup-btn"><a href="../../index.php">Logout</a></button>
                 </div>
             </div>
         </header>

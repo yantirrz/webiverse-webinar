@@ -2,7 +2,7 @@
 $hostname = "localhost";
 $username = "root";
 $pass = "";
-$db = "webinar_db";
+$db = "webinar";
 
 $conn = mysqli_connect($hostname, $username, $pass, $db);
 

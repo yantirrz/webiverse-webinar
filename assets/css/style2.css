@@ -85,11 +85,11 @@ a {
 }
 
 /* style khusus untuk tombol Log In */
-.login-btn {
+.login-btn a {
   background: #fff;
   color: #fff;
 }
-.login-btn:hover {
+.login-btn a:hover {
   color: #9b89f9;
 }
 
