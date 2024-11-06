@@ -7,23 +7,23 @@ include ('../../koneksi/koneksi.php');
 $username = $_POST['username'];
 $password = $_POST['password'];
 // menyeleksi data admin dengan username dan password yang sesuai
-$query = mysqli_query($conn, "SELECT * FROM pengguna WHERE
+$query = mysqli_query($conn, "SELECT * FROM user WHERE
 username='$username' AND PASSWORD='$password'");
 // Memeriksa record data pada tabel admin
 $cek = mysqli_num_rows($query);
 if ($cek > 0) {
     $data = mysqli_fetch_array($query);
-    if ($data['level'] == 'admin') {
-        $_SESSION['username'] = $username;
-        $_SESSION['status'] = "login";
-        $_SESSION['level'] = "admin";
+    // session yang dibuat ketika sudah login
+    $_SESSION['id'] = $data['id'];
+    $_SESSION['username'] = $username;
+    $_SESSION['status'] = "login";
+    $_SESSION['role'] = $data['role'];
+    if ($data['role'] == 'admin') {
         header("location:../../pages/admin/dashboard.php");
     } else {
-        $_SESSION['username'] = $username;
-        $_SESSION['status'] = "login";
-        $_SESSION['level'] = "user";
         header("location: ../../pages/user/index2.php");
     }
 } else {
-    header("location:.. /login/register.php?pesan=gagal");
+    header("location:../login/register.php?pesan=gagal");
 }   
+
