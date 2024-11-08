@@ -1,3 +1,19 @@
+<?php
+session_start();
+include '../../koneksi/koneksi.php';
+
+if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'peserta') {
+  header("Location: ../../index.php");
+  exit();
+}
+
+// Ambil data user berdasarkan user_id di session
+$user_id = $_SESSION['id'];
+$query = "SELECT * FROM user WHERE id = '$user_id'";
+$result = mysqli_query($conn, $query);
+$user = mysqli_fetch_array($result);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -96,10 +112,11 @@
   <body>
     <div class="form-container">
       <h2>Pendaftaran Webinar</h2>
-      <form action="#" method="POST">
+      <form action="../../proses/peserta/daftar_proses.php" method="POST">
         <!-- ini label nama -->
         <div class="form-group">
           <label for="nama">Nama:</label>
+          <input type="hidden" id="username" name="username" value="<?php echo $user['id'];   ?>" />
           <input type="text" id="nama" name="nama" required />
         </div>
         <!-- Ini label alamat -->
@@ -117,24 +134,35 @@
           <label for="jenis_kelamin">Jenis Kelamin:</label>
           <select id="jenis_kelamin" name="jenis_kelamin" required>
             <option value="">Pilih</option>
-            <option value="Laki-Laki">Laki-Laki</option>
-            <option value="Perempuan">Perempuan</option>
+            <option value="l">Laki-Laki</option>
+            <option value="p">Perempuan</option>
           </select>
         </div>
         <!-- Ini label webinar yang dipilih -->
         <div class="form-group">
           <label for="webinar">Webinar yang Dipilih:</label>
           <select id="webinar" name="webinar" required>
-            <option value="">Pilih Webinar</option>
-            <option value="Webinar 1">Webinar 1</option>
-            <option value="Webinar 2">Webinar 2</option>
-            <option value="Webinar 3">Webinar 3</option>
-            <!-- Opsinya bisa diganti data dari database -->
+          <option value="">Pilih Webinar</option>
+            <?php
+              $que = "SELECT id,judul FROM event";
+              $kok = mysqli_query($conn,$que);
+
+              while ($row = mysqli_fetch_assoc($kok)){
+
+              
+            ?>
+
+            <option value="<?php echo $row['id'] ;?>"><?php echo $row['judul']; ?></option>
+          <?php
+              }
+          ?>
           </select>
+
+          
         </div>
 
-        <button type="submit" class="submit-btn">Daftar</button>
-        <button type="reset" class="batal-btn">Batal</button>
+        <button type="submit" name="submit" class="submit-btn">Daftar</button>
+        <button type="button" onclick="window.location.href='index2.php';" class="batal-btn">Batal</button>
       </form>
     </div>
   </body>

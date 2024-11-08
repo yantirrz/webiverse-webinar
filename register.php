@@ -136,14 +136,11 @@
     <div class="container">
         <div class="form-container">
             <h1 class="form-title">Sign Up</h1>
-            <form action="proses/auth/register_proses.php" method="post" id="signup-form" class="form">
+            <form action="proses/auth/register_proses.php" method="post" id="signup-form" class="form" onsubmit="return validasiPassword()">
                 <input type="text" placeholder="Username" name="username" required class="input-field" />
-                <input type="password" placeholder="Password" name="password" required class="input-field" />
-                <input type="text" placeholder="Nama Lengkap" name="nama_lengkap" required class="input-field" />
-                <select class="custom-select" aria-label="Default select example" name="level" id="level">
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
-                </select>
+                <input type="password" id="Password" placeholder="Password"  name="password" required class="input-field" />
+                <input type="password" id="konfirmasi" placeholder="Konfirmasi Password" name="konfirmasi_password" required class="input-field" />
+                <input type="hidden" name="role" value="peserta" />
 
                 <button type="submit" name="submit" class="submit-button">Sign Up</button>
                 <div class="terms">
@@ -151,6 +148,18 @@
                     <a href="#">Terms of Service</a> and its <a href="#">Privacy Policy</a>.
                 </div>
             </form>
+            <script>
+                function validasiPassword(){
+                    var password = document.getElementById("Password").value;
+                    var confirm = document.getElementById("konfirmasi").value;
+
+                    if (password !== confirm) {
+                        alert("Password tidak sama!")
+                        return false;
+                    }
+                    return true;
+                }
+            </script>
         </div>
         <div class="side-image">
             <img src="assets\images\gambar1.jpg" alt="Online presentation">
