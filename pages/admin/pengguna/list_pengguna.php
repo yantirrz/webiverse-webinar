@@ -1,127 +1,133 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style2.css">
     <title>Halaman Admin</title>
     <style>
-        /* Reset default margin/padding */
+        /* Reset some default styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Body and main content styles */
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            min-height: 100vh;
-            background-color: #f4f7fc;
-            flex-direction: column; /* Pastikan konten diatur dalam kolom */
+            background-color: #f0f0f0;
         }
 
         .main-content {
-            flex-grow: 1;
-            padding: 20px;
-            margin-top: -340px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
         }
 
-        .header {
+        /* Header styles */
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            margin: auto;
+        }
+
+        /* style  untuk container utama */
+        .nav-wrapper {
+            max-width: 88%;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0px;
+            padding: 10px 20px;
         }
 
-        .card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 25%;
-            text-align: center;
+        /* style  untuk logo dan teks di navbar */
+        .logo {
+            display: flex;
+            align-items: center;
         }
 
-        .card h3 {
+        /* style  untuk gambar logo */
+        .logo img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        /* style  teks untuk logo */
+        .logo span {
+            font-weight: bold;
+            color: #333;
             font-size: 20px;
+        }
+
+        /* style  untuk daftar menu navbar */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* style  untuk tautan dalam navbar */
+        .navbar ul li a {
+            text-decoration: none;
             color: #333;
         }
 
-        .card p {
-            font-size: 28px;
-            color: #3498db;
-            font-weight: bold;
+        auth-buttons .signup-btn {
+        background: none;
+        color: #fff;
+        }
+
+        /* User table styles */
+        .user-table {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
         }
 
         .user-table h2 {
+            color: #5451bb;
+            text-align: center;
             margin-bottom: 20px;
-            color: #333;
         }
 
-        table {
+        .btn-tambah,
+        .btn-print {
+            background-color: #9b89f9;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin: 0 5px 10px 5px
+        }
+
+        .user-table table {
             width: 100%;
             border-collapse: collapse;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        table th,
-        table td {
+        .user-table th,
+        .user-table td {
             padding: 12px;
-            text-align: center;
+            text-align: left;
             border-bottom: 1px solid #ddd;
         }
 
-        table th {
-            background-color: #3498db;
-            color: white;
-        }
-
-        table td button {
-            padding: 6px 12px;
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
-
-        table td button:hover {
-            background-color: #27ae60;
-        }
-
-        /* Button tambah */
-        .btn-tambah {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        .btn-tambah:hover {
-            background-color: #2980b9;
-        }
-
-        /* Button Print */
-        .btn-print {
-            padding: 10px 20px;
-            background-color: #9b59b6;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        .btn-print:hover {
-            background-color: #8e44ad;
+        .user-table th {
+            background-color: #f0f0f0;
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="navbar">
@@ -132,10 +138,10 @@
             </div>
             <!-- Daftar menu navigasi -->
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Data Webinar</a></li>
-                <li><a href="#">Pendaftar</a></li>
-                <li><a href="/jadwal.php">Kelola akun</a></li>
+                <li><a href="../dashboard.php">Home</a></li>
+                <li><a href="../event/list_event.php">Data Webinar</a></li>
+                <li><a href="../peserta/list_peserta.php">Pendaftar</a></li>
+                <li><a href="list_pengguna.php">Kelola akun</a></li>
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
@@ -202,4 +208,5 @@
     </script>
 
 </body>
+
 </html>

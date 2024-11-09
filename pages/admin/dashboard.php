@@ -40,10 +40,10 @@ $result = mysqli_query($conn, $query);
         </div>
         <!-- Daftar menu navigasi -->
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Data Webinar</a></li>
-          <li><a href="#">Pendaftar</a></li>
-          <li><a href="/jadwal.php">Kelola akun</a></li>
+          <li><a href="dashboard.php">Home</a></li>
+          <li><a href="event/list_event.php">Data Webinar</a></li>
+          <li><a href="peserta/list_peserta.php">Pendaftar</a></li>
+          <li><a href="pengguna/list_pengguna.php">Kelola akun</a></li>
         </ul>
         <!-- Tombol untuk Log In dan Sign Up -->
         <div class="auth-buttons">
