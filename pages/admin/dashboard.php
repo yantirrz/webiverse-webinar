@@ -65,7 +65,7 @@ $result = mysqli_query($conn, $query);
                         <!-- Card 1 -->
                          <?php while ($event = mysqli_fetch_assoc($result)): ?>
                         <div class="card">
-                            <img src="<?php echo $event['gambar']; ?>" alt="Webinar Image" />
+                            <img src="../../assets/gambar/<?php echo $event['gambar']; ?>" alt="Webinar Image" />
                             <div class="card-content">
                                 <div class="card-info">
                                     <h3><?php echo $event['judul']; ?></h3>
@@ -136,7 +136,7 @@ $result = mysqli_query($conn, $query);
 
     <!-- button tambahkan webinar -->
     <div class="add-webinar">
-      <button type="button">Tambahkan Webinar</button>
+      <button type="button"><a href="event/tambah_event.php">Tambahkan Webinar</a></button>
     </div>
 
   </body>
