@@ -137,6 +137,7 @@ $resultid = mysqli_query($conn, $queryid);
                     <p><?php echo htmlspecialchars($event['jenis']); ?></p>
                   </div>
                 </div>
+                <button class="link-webinar" onclick="window.location.href='https://t.me/webinargratissertifikat'">Link webinar</button>
               </div>
             </div>
           <?php 
