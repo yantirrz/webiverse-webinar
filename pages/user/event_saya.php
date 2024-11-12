@@ -61,7 +61,7 @@ $resultid = mysqli_query($conn, $queryid);
     </header>
     <div id="webinar">
       <div class="container">
-        <h2>Webinar Saya</h2>
+        <h2>Jadwal Webinar Saya</h2>
         <div class="card-grid">
           <?php 
           // Loop melalui setiap event yang ditemukan dalam hasil query pertama

@@ -108,11 +108,7 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>28 September 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -129,11 +125,7 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>19:30</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -182,11 +174,7 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>27 September 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -203,11 +191,7 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>19:00</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -257,11 +241,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>28 September 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -278,11 +259,8 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>08:30</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -331,11 +309,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>30 Oktober 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -352,11 +327,8 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>19:30</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -405,11 +377,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>27 September 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -426,11 +395,8 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>15:00</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -480,11 +446,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>30 Oktober 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -501,11 +464,8 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>19:30</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -554,11 +514,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>19 September 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -575,11 +532,7 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>19:00</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
@@ -629,11 +582,8 @@
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2cvU4sMQxGU3F5BLjwiMDtgG6UQMEQg8RL8VMBj4KgQWMpKEuD4II2bGwnO9+R0iBr1j54PeAizgEAAAAAAAAAAAAANwxpkwL/i57vyE8vFDit5fGL2m6j54Orq/RH9Vd/NqRdCvxoLiHonuj5Ideu2cmzk0wfZKt0dh4X1sWS9TnhfXHRi5lsXWgw7+obedFherYulKxFh+lZXPR3H+7WFLKqF6IZoiVARysB0UpAtBIQrQREKwHRSkC0EhCtBETPVfTcjoNohmhqoBPR0cFeHkZHsBeLGR0g2rzrCB3N5qIwOoK9xDWb0dMreT4ch/Q3nxj4aPGzJeJLcy59/jLxrhfRMfDR52e/F7d8fCmlz/8p3vUi+vI0bX9+9vmQtkriSyl9/k/xrhfR439GwMVp2pEurLV8TEYHeT62Em2VT3Gi5Wd6zcVpv3xay+cXicoeV5iPdP5igmsnShAN0YSO/gpGB0bHamBGs/XL8Pe7i7GRP++62HXU2F1Ehd1Ca/kUJ1pjd3GusFtoLR/xXcFYIb6Umvk4aWrtCmKF+OLcK+azai5quwJaIb40Z4l8nDTfJzqv4yCaIZoa6ER0dLCXh9ER7MViRofZiZbddZB4fCeipXcdUTi+G9HSu45L4fhuRFvsOi4qxncj2mLXQRXjuxGtuesYReK7ET2v4yCaIZoa6MRuOhrXsXG+ju1JXjQuGEw6Fwx6PrD+2pLxiZ73xEXnC1DzRajWxZLduR+GtOE0yFf7zlT2ff7v0mmSOzvfOpvn1Tq/ION7bdd5XKh1MgAAAAAAAAAAAIBrmze582qIAg3rUQAAAABJRU5ErkJggg==" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>25 September 2024</p>
-=======
                                         <p>24 Oktober 2024</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="time">
                                         <!-- icon jam -->
@@ -650,11 +600,8 @@
                                                     xlink:href="data:image/png;base64,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" />
                                             </defs>
                                         </svg>
-<<<<<<< HEAD
-                                        <p>12:00</p>
-=======
                                         <p>09:00</p>
->>>>>>> dbf17ee (menyelesaikan datetime)
+
                                     </div>
                                     <div class="zoom">
                                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
