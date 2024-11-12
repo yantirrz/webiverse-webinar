@@ -1,3 +1,16 @@
+<?php
+include '../../../koneksi/koneksi.php';
+session_start();
+
+// Fetch events from the database
+$sql = "SELECT * FROM event";
+$result = mysqli_query($conn, $sql);
+
+if (!$result) {
+    die("Error executing the query: " . mysqli_error($conn));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -80,8 +93,8 @@
         }
 
         auth-buttons .signup-btn {
-        background: none;
-        color: #fff;
+            background: none;
+            color: #fff;
         }
 
         /* User table styles */
@@ -124,7 +137,7 @@
         .user-table th {
             background-color: #f0f0f0;
         }
-        
+
         .actions-btn {
             display: flex;
         }
@@ -178,8 +191,7 @@
         <section class="user-table">
             <h2>Data Webinar</h2>
             <!-- Button Tambah -->
-            <button class="btn-tambah" onclick="tambahPengguna()">Tambah Webinar</button>
-
+            <button class="btn-tambah" "><a href=" tambah_event.php">Tambah Webinar</a></button>
             <table>
                 <thead>
                     <tr>
@@ -194,32 +206,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php while ($event = mysqli_fetch_assoc($result)): ?>
                     <tr>
-                        <td>1</td>
-                        <td>Webinar Teknologi</td>
-                        <td>Deskripsi singkat mengenai webinar teknologi</td>
-                        <td><img src="path/to/image1.jpg" alt="Gambar Webinar 1" width="50" height="50"></td>
-                        <td>2024-11-10</td>
-                        <td>10:00</td>
-                        <td>Online</td>
+                        <td><?php echo $event['id']; ?></td>
+                        <td><?php echo $event['judul']; ?></td>
+                        <td><?php echo $event['deskripsi']; ?></td>
+                        <td><img src="../../../assets/gambar/<?php echo $event['gambar']; ?>" alt="Gambar Webinar" width="50" height="50"></td>
+                        <td><?php echo $event['tanggal']; ?></td>
+                        <td><?php echo $event['jam']; ?></td>
+                        <td><?php echo $event['jenis']; ?></td>
                         <td class="action-btn d-flex">
-                            <button class="btn-edit" onclick="editWebinar(1)">Edit</button>
-                            <button class="btn-hapus" onclick="hapusWebinar(1)">Hapus</button>
+                            <button class="btn-edit" onclick="editWebinar(<?php echo $event['id']; ?>)">Edit</button>
+                            <button class="btn-hapus" onclick="hapusWebinar(<?php echo $event['id']; ?>)">Hapus</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Webinar Bisnis</td>
-                        <td>Deskripsi singkat mengenai webinar bisnis</td>
-                        <td><img src="path/to/image2.jpg" alt="Gambar Webinar 2" width="50" height="50"></td>
-                        <td>2024-11-15</td>
-                        <td>14:00</td>
-                        <td>Offline</td>
-                        <td>
-                            <button class="btn-edit" onclick="editWebinar(2)">Edit</button>
-                            <button class="btn-hapus" onclick="hapusWebinar(2)">Hapus</button>
-                        </td>
-                    </tr>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
         </section>
@@ -239,12 +240,8 @@
             }
         }
 
-        // Fungsi untuk menambah webinar
-        function tambahPengguna() {
-            alert('Form Tambah Webinar akan ditambahkan di sini!');
-            // Di sini bisa ditambahkan kode untuk menampilkan form input webinar baru
-        }
     </script>
+
 
 </body>
 
