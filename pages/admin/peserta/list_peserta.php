@@ -171,7 +171,7 @@
     <main class="main-content">
         <!-- Tabel Webinar -->
         <section class="user-table">
-            <h2>Data Webinar</h2>
+            <h2>List Peserta Webinar</h2>
             <!-- Button Tambah -->
             <button class="btn-tambah" onclick="tambahWebinar()">Tambah Webinar</button>
 
