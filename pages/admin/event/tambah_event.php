@@ -189,9 +189,14 @@
                 <option value="offline">Offline</option>
             </select>
 
-            <button type="submit">Simpan</button>
+            <button type="submit" onclick="tambahWebinar()">Simpan</button>
         </form>
     </div>
 </body>
+<script>
+    function tambahWebinar() {
+        alert('Webinar berhasil ditambahkan!');
+        // Di sini bisa ditambahkan kode untuk menampilkan form input webinar baru
+    }</script>
 
 </html>

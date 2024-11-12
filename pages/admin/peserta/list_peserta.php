@@ -1,3 +1,29 @@
+<?php
+session_start();
+include '../../../koneksi/koneksi.php';
+
+if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: ../../index.php");
+    exit();
+}
+
+// Ambil data dari user dan event
+$sql = "
+SELECT 
+    pendaftar.id, 
+    pendaftar.nama, 
+    pendaftar.alamat, 
+    pendaftar.no_telp, 
+    pendaftar.jk,
+    event.judul
+FROM pendaftar 
+JOIN event ON pendaftar.event = event.id
+";
+$result = $conn->query($sql);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -79,8 +105,8 @@
         }
 
         auth-buttons .signup-btn {
-        background: none;
-        color: #fff;
+            background: none;
+            color: #fff;
         }
 
         /* User table styles */
@@ -93,12 +119,13 @@
         }
 
         .user-table h2 {
-            text-align: center;
             color: #5451bb;
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        .btn-tambah {
+        .btn-tambah,
+        .btn-print {
             background-color: #9b89f9;
             color: #fff;
             border: none;
@@ -106,6 +133,7 @@
             border-radius: 4px;
             cursor: pointer;
             margin-bottom: 20px;
+            margin: 0 5px 10px 5px
         }
 
         .user-table table {
@@ -122,25 +150,6 @@
 
         .user-table th {
             background-color: #f0f0f0;
-        }
-
-        .btn-edit {
-            background-color: #9b89f9;
-            color: #fff;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 5px;
-        }
-
-        .btn-hapus {
-            background-color: #ff5252;
-            color: #fff;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -169,65 +178,57 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Tabel Webinar -->
+        <!-- Tabel Pengguna -->
         <section class="user-table">
-            <h2>List Peserta Webinar</h2>
+            <h2>Data Pengguna</h2>
             <!-- Button Tambah -->
-            <button class="btn-tambah" onclick="tambahWebinar()">Tambah Webinar</button>
+            <button class="btn-tambah" onclick="tambahPengguna()">Tambah Pengguna</button>
+            <!-- Button Print -->
+            <button class="btn-print" onclick="printTable()">Print Tabel</button>
 
             <table>
                 <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nama</th>
-                        <th>Password</th>
-                        <th>Role</th>
-                    </tr>
-                </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Webinar Teknologi</td>
-                        <td>Deskripsi singkat mengenai webinar teknologi</td>
-                        <td>
-                            <button class="btn-edit" onclick="editWebinar(1)">Edit</button>
-                            <button class="btn-hapus" onclick="hapusWebinar(1)">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Webinar Bisnis</td>
-                        <td>Deskripsi singkat mengenai webinar bisnis</td>
-                        <td>
-                            <button class="btn-edit" onclick="editWebinar(2)">Edit</button>
-                            <button class="btn-hapus" onclick="hapusWebinar(2)">Hapus</button>
-                        </td>
-                    </tr>
+                    <?php
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["id"] . "</td>";
+                            echo "<td>" . $row["nama"] . "</td>";
+                            echo "<td>" . $row["alamat"] . "</td>";
+                            echo "<td>" . $row["no_telp"] . "</td>";
+                            echo "<td>" . $row["jk"] . "</td>";
+                            echo "<td>" . $row["judul"] . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='6'>Tidak ada data pendaftar</td></tr>";
+                    }
+                    ?>
+                    </thead>
                 </tbody>
             </table>
         </section>
     </main>
 
     <script>
-        // Fungsi untuk mengedit data webinar
-        function editWebinar(id) {
-            alert('Fungsi Edit untuk Webinar ID: ' + id + ' akan ditambahkan di sini!');
+        // Fungsi untuk menambah pengguna
+        function tambahPengguna() {
+            alert('Form Tambah Pengguna akan ditambahkan di sini!');
         }
 
-        // Fungsi untuk menghapus data webinar
-        function hapusWebinar(id) {
-            if (confirm('Apakah Anda yakin ingin menghapus Webinar ID: ' + id + '?')) {
-                alert('Webinar ID: ' + id + ' telah dihapus.');
-                // Di sini bisa ditambahkan kode untuk menghapus data webinar dari tabel atau database
-            }
-        }
-
-        // Fungsi untuk menambah webinar
-        function tambahWebinar() {
-            alert('Form Tambah Webinar akan ditambahkan di sini!');
-            // Di sini bisa ditambahkan kode untuk menampilkan form input webinar baru
+        // Fungsi untuk mencetak tabel
+        function printTable() {
+            const content = document.querySelector('table').outerHTML;
+            const printWindow = window.open('', '', 'height=500, width=800');
+            printWindow.document.write('<html><head><title>Print Tabel</title></head><body>');
+            printWindow.document.write(content);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
         }
     </script>
+
 </body>
 
 </html>

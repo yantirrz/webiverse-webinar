@@ -78,8 +78,8 @@ $resultid = mysqli_query($conn, $queryid);
                       $event = mysqli_fetch_assoc($result);
           ?>
             <div class="card">
-              <img src="<?php echo htmlspecialchars($event['gambar']); ?>" alt="Webinar Image" />
-              <div class="card-content">
+            <img src="../../assets/gambar/<?php echo $event['gambar']; ?>" alt="Webinar Image" />
+            <div class="card-content">
                 <div class="card-info">
                   <h3><?php echo htmlspecialchars($event['judul']); ?></h3>
                   <p><?php echo htmlspecialchars($event['deskripsi']); ?></p>

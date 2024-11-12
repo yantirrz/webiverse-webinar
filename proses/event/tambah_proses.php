@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Menjalankan query dan memeriksa keberhasilannya
     if ($conn->query($sql) === TRUE) {
         echo "Data acara berhasil disimpan.";
+        header("Location: ../../pages/admin/event/list_event.php");
     } else {
         echo "Terjadi kesalahan saat menyimpan data: " . $conn->error;
     }
