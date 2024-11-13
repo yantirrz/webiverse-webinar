@@ -12,19 +12,9 @@ $query = "SELECT * FROM event";
 $result = mysqli_query($conn, $query);
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="..\..\assets\images\logo (2).png" />
-    <title>Document</title>
-</head>
-
-<body>
     <!DOCTYPE html>
     <!-- ini kode untuk bagian landing page sebelum login -->
+    <!-- codingan damayanti dan cinta N.P.M -->
     <html lang="en">
 
     <head>
@@ -32,7 +22,7 @@ $result = mysqli_query($conn, $query);
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WebiVerse - Platform Webinar</title>
         <link rel="stylesheet" href="../../assets/css/style2.css" />
-        <link rel="icon" type="image/x-icon" href="foto/logo (2).png" />
+        <link rel="icon" type="image/x-icon" href="..\..\assets\images\logo (2).png" />
     </head>
 
     <body>
@@ -291,7 +281,3 @@ $result = mysqli_query($conn, $query);
     </body>
 
     </html>
-
-</body>
-
-</html>

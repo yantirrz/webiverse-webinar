@@ -1,4 +1,5 @@
 <?php
+// codingan ahmad rai fatkaozi
 // mengaktifkan session php
 session_start();
 // menghubungkan dengan koneksi database

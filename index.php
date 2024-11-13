@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- ini kode untuk bagian landing page sebelum login -->
+ <!-- codingan damayanti dan cinta n.p.m -->
 <html lang="en">
 
 <head>
