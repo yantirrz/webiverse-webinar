@@ -1,26 +1,3 @@
-<?php
-include '../../../koneksi/koneksi.php';
-
-// Ambil ID dari parameter URL
-$id = $_GET['id'];
-
-// Ambil data event berdasarkan ID
-$query = "SELECT * FROM event WHERE id = '$id'";
-$result = mysqli_query($conn, $query);
-
-// Periksa apakah ada data
-if(mysqli_num_rows($result) > 0){
-    $event = mysqli_fetch_assoc($result);
-} else {
-    echo "<script>
-        alert('Event Tidak DItemukan!');
-        window.location.href = 'list_event.php';
-        </script>";
-    exit;
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +5,7 @@ if(mysqli_num_rows($result) > 0){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../../assets/images/logo (2).png" />
-    <title>EDIT WEBINAR</title>
+    <title>TAMBAH PENGGUNA</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -182,9 +159,9 @@ if(mysqli_num_rows($result) > 0){
             <!-- Daftar menu navigasi -->
             <ul>
                 <li><a href="../dashboard.php">Home</a></li>
-                <li><a href="list_event.php">Data Webinar</a></li>
+                <li><a href="../event/list_event.php">Data Webinar</a></li>
                 <li><a href="../peserta/list_peserta.php">Pendaftar</a></li>
-                <li><a href="../pengguna/list_pengguna.php">Kelola akun</a></li>
+                <li><a href="list_pengguna.php">Kelola akun</a></li>
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
@@ -194,29 +171,28 @@ if(mysqli_num_rows($result) > 0){
     </header>
     <div class="container">
 
-        <form action="../../../proses/event/edit_proses.php?id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">
-            <label for="judul">Judul:</label>
-            <input type="text" id="judul" name="judul" value="<?php echo $event['judul']; ?>" required>
+        <form action="../../../proses/pengguna/tambah_proses.php" method="POST" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-            <label for="deskripsi">Deskripsi:</label>
-            <textarea id="deskripsi" name="deskripsi" required><?php echo $event['deskripsi']; ?></textarea>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
 
-            <label for="gambar">Gambar:</label>
-            <input type="file" id="gambar" name="gambar">
-            <input type="hidden" name="gambar_lama" value="<?php echo $event['gambar']; ?>">
+            <label for="role">Role:</label>
+            <select name="role" id="role">
+                <option value="">Pilih</option>
+                <option value="admin">ADMIN</option>
+                <option value="peserta">PESERTA</option>
+            </select>
 
-            <label for="tanggal">Tanggal:</label>
-            <input type="date" id="tanggal" name="tanggal" value="<?php echo $event['tanggal']; ?>" required>
-
-            <label for="jam">Jam:</label>
-            <input type="time" id="jam" name="jam" value="<?php echo $event['jam']; ?>" required>
-
-            <label for="jenis">Jenis:</label>
-            <input type="text" id="jenis" name="jenis" value="<?php echo $event['jenis']; ?>" readonly>
-
-            <button type="submit">Simpan</button>
+            <button type="submit" onclick="tambahWebinar()">Simpan</button>
         </form>
     </div>
 </body>
+<script>
+    function tambahWebinar() {
+        alert('User berhasil ditambahkan!');
+        // Di sini bisa ditambahkan kode untuk menampilkan form input webinar baru
+    }</script>
 
 </html>

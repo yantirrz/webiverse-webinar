@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/logo (2).png" />
+    <title>TAMBAH WEBINAR</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -164,7 +165,7 @@
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
-                <button class="signup-btn"><a href="../../proses/auth/logout_proses.php">Logout</a></button>
+                <button class="signup-btn"><a href="../../../proses/auth/logout_proses.php">Logout</a></button>
             </div>
         </div>
     </header>
@@ -187,10 +188,7 @@
             <input type="time" id="jam" name="jam" required>
 
             <label for="jenis">Jenis:</label>
-            <select id="jenis" name="jenis" required>
-                <option value="zoom">Zoom</option>
-                <option value="offline">Offline</option>
-            </select>
+            <input type="text" id="jenis" name="jenis" value="zoom" readonly>
 
             <button type="submit" onclick="tambahWebinar()">Simpan</button>
         </form>

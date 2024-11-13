@@ -3,8 +3,8 @@ session_start();
 include '../../koneksi/koneksi.php';
 
 if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'peserta') {
-  header("Location: ../../index.php");
-  exit();
+    header("Location: ../../index.php");
+    exit();
 }
 
 // Ambil data user berdasarkan user_id di session
