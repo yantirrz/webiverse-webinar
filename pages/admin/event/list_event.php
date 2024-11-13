@@ -120,6 +120,7 @@ if (!$result) {
             border-radius: 4px;
             cursor: pointer;
             margin-bottom: 20px;
+            margin-left:0;
         }
 
         .user-table table {
@@ -149,7 +150,7 @@ if (!$result) {
             padding: 6px 12px;
             border-radius: 4px;
             cursor: pointer;
-            margin-right: 5px;
+            margin-left:8px;
         }
 
         .btn-hapus {
@@ -159,6 +160,8 @@ if (!$result) {
             padding: 6px 12px;
             border-radius: 4px;
             cursor: pointer;
+            margin-top:4px ;
+            margin-left:8px;
         }
     </style>
 </head>
@@ -192,7 +195,7 @@ if (!$result) {
             <h2>Data Webinar</h2>
             <!-- Button Tambah -->
             <button class="btn-tambah" "><a href=" tambah_event.php">Tambah Webinar</a></button>
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -213,7 +216,7 @@ if (!$result) {
                         <td><?php echo $event['deskripsi']; ?></td>
                         <td><img src="../../../assets/gambar/<?php echo $event['gambar']; ?>" alt="Gambar Webinar" width="50" height="50"></td>
                         <td><?php echo $event['tanggal']; ?></td>
-                        <td><?php echo $event['jam']; ?></td>
+                        <td><?php echo $event['jam']; ?> WIB</td>
                         <td><?php echo $event['jenis']; ?></td>
                         <td class="action-btn d-flex">
                             <button class="btn-edit" onclick="editWebinar(<?php echo $event['id']; ?>)">Edit</button>

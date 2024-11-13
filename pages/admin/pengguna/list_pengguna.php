@@ -122,6 +122,7 @@ $result = $conn->query($sql);
             border-radius: 4px;
             cursor: pointer;
             margin-bottom: 20px;
+            margin-left:0;
         }
 
         .user-table table {
@@ -147,7 +148,7 @@ $result = $conn->query($sql);
             padding: 6px 12px;
             border-radius: 4px;
             cursor: pointer;
-            margin-right: -40px;
+            margin-left: 8px;
         }
 
         .btn-hapus {
@@ -157,6 +158,7 @@ $result = $conn->query($sql);
             padding: 5px 12px;
             border-radius: 4px;
             cursor: pointer;
+            margin-left: 8px;
         }
     </style>
 </head>
@@ -191,7 +193,7 @@ $result = $conn->query($sql);
             <!-- Button Tambah -->
             <button class="btn-tambah">Tambah Akun</button>
 
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>ID</th>

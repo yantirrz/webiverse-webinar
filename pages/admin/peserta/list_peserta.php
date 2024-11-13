@@ -124,7 +124,6 @@ $result = $conn->query($sql);
             margin-bottom: 20px;
         }
 
-        .btn-tambah,
         .btn-print {
             background-color: #9b89f9;
             color: #fff;
@@ -180,34 +179,41 @@ $result = $conn->query($sql);
     <main class="main-content">
         <!-- Tabel Pengguna -->
         <section class="user-table">
-            <h2>Data Pengguna</h2>
-            <!-- Button Tambah -->
-            <button class="btn-tambah" onclick="tambahPengguna()">Tambah Pengguna</button>
+            <h2>Data Pendaftar webinar</h2>
             <!-- Button Print -->
             <button class="btn-print" onclick="printTable()">Print Tabel</button>
 
-            <table>
-                <thead>
-                <tbody>
-                    <?php
-                    if ($result->num_rows > 0) {
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<tr>";
-                            echo "<td>" . $row["id"] . "</td>";
-                            echo "<td>" . $row["nama"] . "</td>";
-                            echo "<td>" . $row["alamat"] . "</td>";
-                            echo "<td>" . $row["no_telp"] . "</td>";
-                            echo "<td>" . $row["jk"] . "</td>";
-                            echo "<td>" . $row["judul"] . "</td>";
-                            echo "</tr>";
-                        }
-                    } else {
-                        echo "<tr><td colspan='6'>Tidak ada data pendaftar</td></tr>";
+            <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>No. Telepon</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Judul Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row["id"] . "</td>";
+                        echo "<td>" . $row["nama"] . "</td>";
+                        echo "<td>" . $row["alamat"] . "</td>";
+                        echo "<td>" . $row["no_telp"] . "</td>";
+                        echo "<td>" . $row["jk"] . "</td>";
+                        echo "<td>" . $row["judul"] . "</td>";
+                        echo "</tr>";
                     }
-                    ?>
-                    </thead>
-                </tbody>
-            </table>
+                } else {
+                    echo "<tr><td colspan='6'>Tidak ada data pendaftar</td></tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+
         </section>
     </main>
 

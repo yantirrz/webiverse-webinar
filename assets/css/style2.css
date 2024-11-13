@@ -304,7 +304,6 @@ button:hover {
 .time {
   display: flex;
   flex-direction: row;
-
   align-items: center;
   padding-left: 3px;
 }
@@ -337,7 +336,6 @@ button:hover {
 .social-media {
   width: 300px;
   height: 180px;
-
   display: flex;
   flex-direction: column;
   margin: auto;
