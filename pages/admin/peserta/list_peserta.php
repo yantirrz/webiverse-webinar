@@ -3,7 +3,7 @@ session_start();
 include '../../../koneksi/koneksi.php';
 
 if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'admin') {
-    header("Location: ../../index.php");
+    header("Location: ../../../index.php");
     exit();
 }
 
@@ -31,6 +31,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style2.css">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/logo (2).png" />
     <title>Halaman Admin</title>
     <style>
         /* Reset some default styles */
@@ -170,7 +171,7 @@ $result = $conn->query($sql);
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
-                <button class="signup-btn">Logout</button>
+                <button class="signup-btn"><a href="../../../proses/auth/logout_proses.php">Logout</a></button>
             </div>
         </div>
     </header>

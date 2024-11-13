@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebiVerse - Platform Webinar</title>
     <link rel="stylesheet" href="../../assets/css/style2.css" />
-    <link rel="icon" type="image/x-icon" href="foto/logo (2).png" />
+    <link rel="icon" type="image/x-icon" href="../../assets/images/logo (2).png" />
   </head>
   <body>
     <!-- Bagian Cinta -->

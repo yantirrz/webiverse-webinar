@@ -3,7 +3,7 @@ session_start();
 include '../../../koneksi/koneksi.php';
 
 if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'admin') {
-    header("Location: ../../index.php");
+    header("Location: ../../../index.php");
     exit();
 }
 
@@ -21,6 +21,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style2.css">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/logo (2).png" />
     <title>Halaman Admin</title>
     <style>
         /* Reset some default styles */
@@ -180,7 +181,7 @@ $result = $conn->query($sql);
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
-                <button class="signup-btn">Logout</button>
+                <button class="signup-btn"><a href="../../../proses/auth/logout_proses.php">Logout</a></button>
             </div>
         </div>
     </header>
@@ -191,7 +192,7 @@ $result = $conn->query($sql);
         <section class="user-table">
             <h2>List Pengguna Webinar</h2>
             <!-- Button Tambah -->
-            <button class="btn-tambah">Tambah Akun</button>
+            <button class="btn-tambah"><a href="tambah_pengguna.php">Tambah Akun</a></button>
 
             <table border="1">
                 <thead>
@@ -213,8 +214,8 @@ $result = $conn->query($sql);
                             echo "<td>" . $row["password"] . "</td>";
                             echo "<td>" . $row["role"] . "</td>";
                             echo "<td>
-                                    <button class='btn-edit' onclick='editUser(" . $row["id"] . ")'>Edit</button>
-                                    <button class='btn-hapus' onclick='hapusUser(" . $row["id"] . ")'>Hapus</button>
+                                    <a href='edit_pengguna.php?id=" . $row["id"] . "' class='btn-edit'>Edit</a>
+                                    <a href='hapus_pengguna.php?id=" . $row["id"] . "' class='btn-hapus' onclick='return confirm(\"Apakah Anda yakin ingin menghapus user ini?\")'>Hapus</a>
                                   </td>";
                             echo "</tr>";
                         }

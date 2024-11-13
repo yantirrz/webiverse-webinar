@@ -2,6 +2,11 @@
 include '../../../koneksi/koneksi.php';
 session_start();
 
+if (!isset($_SESSION['id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: ../../../index.php");
+    exit();
+}
+
 // Fetch events from the database
 $sql = "SELECT * FROM event";
 $result = mysqli_query($conn, $sql);
@@ -18,6 +23,7 @@ if (!$result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style2.css">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/logo (2).png" />
     <title>Halaman Admin</title>
     <style>
         /* Reset default margin/padding */
@@ -183,7 +189,7 @@ if (!$result) {
             </ul>
             <!-- Tombol untuk Log In dan Sign Up -->
             <div class="auth-buttons">
-                <button class="signup-btn">Logout</button>
+                <button class="signup-btn"><a href="../../../proses/auth/logout_proses.php">Logout</a></button>
             </div>
         </div>
     </header>
@@ -219,8 +225,8 @@ if (!$result) {
                         <td><?php echo $event['jam']; ?> WIB</td>
                         <td><?php echo $event['jenis']; ?></td>
                         <td class="action-btn d-flex">
-                            <button class="btn-edit" onclick="editWebinar(<?php echo $event['id']; ?>)">Edit</button>
-                            <button class="btn-hapus" onclick="hapusWebinar(<?php echo $event['id']; ?>)">Hapus</button>
+                            <button class="btn-edit" onclick="window.location.href= 'edit_event.php?id=<?php echo $event['id']; ?>'">Edit</button>
+                            <button class="btn-hapus"><a href="hapus_event.php?id=<?php echo $event['id']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus event ini?')">Hapus</a></button>
                         </td>
                     </tr>
                     <?php endwhile; ?>
@@ -228,22 +234,6 @@ if (!$result) {
             </table>
         </section>
     </main>
-
-    <script>
-        // Fungsi untuk mengedit data webinar
-        function editWebinar(id) {
-            alert('Fungsi Edit untuk Webinar ID: ' + id + ' akan ditambahkan di sini!');
-        }
-
-        // Fungsi untuk menghapus data webinar
-        function hapusWebinar(id) {
-            if (confirm('Apakah Anda yakin ingin menghapus Webinar ID: ' + id + '?')) {
-                alert('Webinar ID: ' + id + ' telah dihapus.');
-                // Di sini bisa ditambahkan kode untuk menghapus data webinar dari tabel atau database
-            }
-        }
-
-    </script>
 
 
 </body>
