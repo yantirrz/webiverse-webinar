@@ -25,6 +25,6 @@ if ($cek > 0) {
         header("location: ../../pages/user/index2.php");
     }
 } else {
-    header("location:../login/register.php?pesan=gagal");
+    header("location:../../login.php?pesan=gagal");
 }   
 
